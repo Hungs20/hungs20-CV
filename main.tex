@@ -5,7 +5,8 @@
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
-
+\usepackage{graphicx}
+\graphicspath{ {./} }
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -40,6 +41,7 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+\renewcommand*{\faicon}[1]{\makebox[1.5em][c]{\csname faicon@#1\endcsname}}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
@@ -131,24 +133,48 @@
 %---------- HEADING ----------
 
 \begin{center}
-    \textbf{\Huge \scshape Chu Văn Hưng} \\ \vspace{3pt}
-    \small
-    \faMobile \hspace{.5pt} \href{tel:0886153083}{0886 153 083}
+    \noindent\begin{minipage}{0.2\textwidth}% adapt widths of minipages to your needs
+\includegraphics[width=\linewidth]{avatar.jpg}
+\end{minipage}%
+\hfill%
+\begin{minipage}{0.7\textwidth}\raggedright
+\textbf{\Huge \scshape Chu Văn Hưng} \\ \vspace{10pt}
+\small
+    \faBirthdayCake \hspace{.5pt} 27/10/2000 \\ \vspace{3pt}
+    \faMobile \hspace{.5pt} \href{tel:0886153083}{0886 153 083} \\ \vspace{3pt}
+    \faAt \hspace{.5pt} \href{mailto:hungs20.uet@gmail.com}{hungs20.uet@gmail.com} \\ \vspace{3pt}
+    
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/hungs20}{LinkedIn}
     $|$
-    \faAt \hspace{.5pt} \href{mailto:hungs20.uet@gmail.com}{hungs20.uet@gmail.com}
-    $|$
-    % \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/arasgungore}{LinkedIn}
-    % $|$
     \faFacebook \hspace{.5pt} \href{https://fb.com/it.hungcv}{Facebook}
     $|$
-    \faGithub \hspace{.5pt} \href{https://github.com/hungs20}{GitHub}
+    \faGithub \hspace{.5pt} \href{https://github.com/hungs20}{GitHub}\\ \vspace{3pt}
+    \faMapMarker \hspace{.5pt} \href{https://goo.gl/maps/9sLbJwDmryodERvY6}{Cổ Nhuế, Từ Liêm, Hà Nội}
+\end{minipage}
+
+    % \textbf{\Huge \scshape Chu Văn Hưng} \\ \vspace{3pt}
+    % \includegraphics[width=9cm, height=12cm]{avatar.jpg} \\ \vspace{3pt}
+    % \small
+    % \faMobile \hspace{.5pt} \href{tel:0886153083}{0886 153 083}
     % $|$
-    % \faGlobe \hspace{.5pt} \href{https://hungs20.github.io}{Portfolio}
-    $|$
-    \faMapMarker \hspace{.5pt} \href{https://goo.gl/maps/AVRfCSWzQVUPjBu78}{Cầu Giấy, Hà Nội}
+    % \faAt \hspace{.5pt} \href{mailto:hungs20.uet@gmail.com}{hungs20.uet@gmail.com}
+    % $|$
+    % \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/hungs20}{LinkedIn}
+    % $|$
+    % \faFacebook \hspace{.5pt} \href{https://fb.com/it.hungcv}{Facebook}
+    % $|$
+    % \faGithub \hspace{.5pt} \href{https://github.com/hungs20}{GitHub}
+    % % $|$
+    % % \faGlobe \hspace{.5pt} \href{https://hungs20.github.io}{Portfolio}
+    % $|$
+    % \faMapMarker \hspace{.5pt} \href{https://goo.gl/maps/9sLbJwDmryodERvY6}{Từ Liêm, Hà Nội}
 \end{center}
 
 
+%----------- Mục tiêu nghề nghiệp -----------
+\section{Mục tiêu nghề nghiệp}
+  \vspace{3pt}
+  Học hỏi thêm các kỹ năng, kiến thức mới từ những người đồng nghiệp, thích nghi với môi trường làm việc, hoàn thiện đúng các yêu cầu về thời gian, công việc để tạo ra sản phẩm tốt nhất. Mở rộng thêm các mối quan hệ, phát triển bản thân. 
 
 %----------- EDUCATION -----------
 
@@ -160,7 +186,7 @@
       {Đại học Công Nghệ - ĐHQG HN
       % \normalfont{(Admission rate: 0.09\%)}
       }{Cầu Giấy, Hà Nội}
-      {Chuyên ngành: Công nghệ thông tin;   \textbf{GPA: 3.22/4.00}}{9\textbf{/}2018 \textbf{--} Nay}
+      {Chuyên ngành: Công nghệ thông tin;   \textbf{GPA: 3.24/4.00}}{9\textbf{/}2018 \textbf{--} 12/2022}
         % \resumeItemListStart
             % \resumeItem{\textbf{Relevant coursework:} Calculus I-II, Matrix Theory, Differential Equations, Materials Science, Electrical Circuits I-II, Digital System Design, Numerical Methods, Probability Theory, Electronics I-II, Signals and Systems, Electromagnetic Field Theory, Energy Conversion, System Dynamics and Control, Communication Engineering}
         % \resumeItemListEnd
@@ -214,17 +240,17 @@
       {Giao hàng tiết kiệm}{Phạm Hùng, Cầu Giấy}
       {Phát triển ứng dụng iOS}{7\textbf{/}2020 \textbf{--} Nay}
         \resumeItemListStart
-            \resumeItem{Sử dụng ngôn ngữ Swift để phát triển các ứng dụng phục vụ cho công việc nhập hàng và giao hàng của tài xế.}
-            \resumeItem{Tham gia phát triển thư viện nội bộ sử dụng cho các ứng dụng khác nhau.}
+            \resumeItem{Sử dụng Swift, kiến trúc MVC, MVVM, UIKit, Autolayout, RxSwift, Alamofire, ... để phát triển ứng dụng lấy/giao hàng dành cho tài xế.}
+            \resumeItem{Tham gia phát triển thư viện nội bộ sử dụng cho các ứng dụng khác nhau như Map, News, Ví.}
             
     \resumeItemListEnd
     
     \resumeSubheading
-      {Freelancer}{}
-      {ABC Food}{9\textbf{/}2022 \textbf{--} 10/2022}
+      {ABC Food}{Freelancer}
+      {Phát triển ứng dụng Android/iOS}{9\textbf{/}2022 \textbf{--} 10/2022}
         \resumeItemListStart
-            \resumeItem{Sử dụng Flutter để phát triển ứng dụng trên android/ios.}
-            \resumeItem{Public ứng dụng trên cửa hàng Google Play và AppStore.}
+            \resumeItem{Sử dụng Flutter để phát triển ứng dụng đặt hàng cho cửa hàng trên nền tảng Android/iOS.}
+            \resumeItem{Đưa ứng dụng lên cửa hàng Google Play và AppStore.}
             \resumeItem{Link ứng dụng: \emph{\href{https://play.google.com/store/apps/details?id=com.abcfood.abcfood}{\color{blue}Google Play}} | \emph{\href{https://apps.apple.com/app/id6443708922}{\color{blue}AppStore}}}
             
     \resumeItemListEnd
@@ -250,9 +276,9 @@
   \vspace{2pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Giải ba quốc gia môn tin học - 2018} \\ \vspace{3pt}
+        \textbf{Giải ba HSG Quốc Gia môn Tin học - 2018} \\ \vspace{3pt}
         
-        \textbf{Tham gia tin học trẻ quốc gia:}{ Tham gia cuộc thi tin học trẻ quốc gia năm 2018} \\ \vspace{3pt}
+        \textbf{Tham gia tin học trẻ quốc gia:}{ Tham gia cuộc thi Tin học trẻ Quốc Gia năm 2018} \\ \vspace{3pt}
         
         % \textbf{Boğaziçi University English Proficiency Test (BUEPT):}{ Achieved the highest grade A on the BUEPT grading scheme with a total score in the range of 85-100.} \\ \vspace{3pt}
         
@@ -271,7 +297,8 @@
         {\textbf{Môi trường thông minh} $|$ \emph{Khóa luận tốt nghiệp}
         }{}
           \resumeItemListStart
-            \resumeItem{Xây dựng ứng dụng môi trường thông minh trên điện thoại di động android/ios, sử dụng Flutter làm front-end, NodeJS và MongoDB làm back-end}
+            \resumeItem{Xây dựng ứng dụng môi trường thông minh trên điện thoại di động Android/iOS, giúp cảnh báo người dùng khi di chuyển vào vùng ô nhiễm, xem thông tin, bản đồ ô nhiễm.}
+            \resumeItem{Sử dụng Flutter làm front-end, NodeJS và MongoDB làm back-end, Firebase Cloud Messaging để thông báo tới thiết bị đi động.}
             \resumeItem{Điểm số: A}
           \resumeItemListEnd
       
@@ -279,36 +306,38 @@
         {\textbf{SOSMap} $|$ \emph{Bài tập lớn môn Kho dữ liệu}
         }{}
           \resumeItemListStart
-            \resumeItem{Xây dựng ứng dụng yêu cầu trợ giúp trên đường, hoạt động trên iOS/Android, sử dụng Flutter, Firebase kết hợp thư viện Map}
+            \resumeItem{Xây dựng ứng dụng gửi và nhận yêu cầu trợ giúp khi xảy ra sự cố trên đường, hoạt động trên iOS/Android.}
+            \resumeItem{Sử dụng Flutter, Firebase kết hợp thư viện Map}
             \resumeItem{Điểm số: A}
           \resumeItemListEnd
       
       \resumeProjectHeading
         {\textbf{Tìm trọ} $|$ \emph{Bài tập lớn môn Thiết kế giao diện người dùng} $|$ \emph{\href{https://github.com/Hungs20/Timtro-ReactNative}{\color{blue}GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{Ứng dụng tìm trọ trên nền tảng Android, sử dụng React native kết hợp Firebase, giúp kết nối giữa người tìm trọ và người cho thuê trọ}
+            \resumeItem{Ứng dụng giúp đăng tải thông tin phòng trọ cho chủ trọ, hiển thị thông tin phòng, liên lạc với chủ phòng đối với người muốn thuê trọ.}
+            \resumeItem{Sử dụng React Native kết hợp Firebase}
             \resumeItem{Điểm số: A}
           \resumeItemListEnd
       
-      \resumeProjectHeading
-        {\textbf{Website tuyển dụng} $|$ \emph{Bài tập lớn môn Lập trình web} $|$ \emph{\href{https://github.com/unik00/Web_team6}{\color{blue}GitHub}}}{}
-          \resumeItemListStart
-            \resumeItem{Cùng nhóm xây dựng trang web tuyển dụng, sử dụng PHP(Laravel) kết hợp MySQL }
-            \resumeItem{Điểm số: A}
-          \resumeItemListEnd
+    %   \resumeProjectHeading
+    %     {\textbf{Website tuyển dụng} $|$ \emph{Bài tập lớn môn Lập trình web} $|$ \emph{\href{https://github.com/unik00/Web_team6}{\color{blue}GitHub}}}{}
+    %       \resumeItemListStart
+    %         \resumeItem{Cùng nhóm xây dựng trang web tuyển dụng, sử dụng PHP(Laravel) kết hợp MySQL }
+    %         \resumeItem{Điểm số: A}
+    %       \resumeItemListEnd
       
-      \resumeProjectHeading
-        {\textbf{Game Contra} $|$ \emph{Bài tập lớn môn Lập trình nâng cao} $|$ \emph{\href{https://github.com/Hungs20/Contra}{\color{blue}GitHub}}}{}
-          \resumeItemListStart
-            \resumeItem{Sử dụng C++ kết hợp thư viện SDL2 xây dựng game trên nền tảng windows}
-            \resumeItem{Điểm số: A+}
-          \resumeItemListEnd
+    %   \resumeProjectHeading
+    %     {\textbf{Game Contra} $|$ \emph{Bài tập lớn môn Lập trình nâng cao} $|$ \emph{\href{https://github.com/Hungs20/Contra}{\color{blue}GitHub}}}{}
+    %       \resumeItemListStart
+    %         \resumeItem{Sử dụng C++ kết hợp thư viện SDL2 xây dựng game trên nền tảng windows}
+    %         \resumeItem{Điểm số: A+}
+    %       \resumeItemListEnd
       
-      \resumeProjectHeading
-        {\textbf{CHL Connect} $|$  \emph{\href{https://m.me/chlconnect}{\color{blue}Facebook}}}{}
-          \resumeItemListStart
-            \resumeItem{Ứng dụng nhắn tin với người lạ trên nền tảng Facebook messenger, sử dụng Facebook API kết hợp NodeJS, MongoDB}
-          \resumeItemListEnd
+    %   \resumeProjectHeading
+    %     {\textbf{CHL Connect} $|$  \emph{\href{https://m.me/chlconnect}{\color{blue}Facebook}}}{}
+    %       \resumeItemListStart
+    %         \resumeItem{Ứng dụng nhắn tin với người lạ trên nền tảng Facebook messenger, sử dụng Facebook API kết hợp NodeJS, MongoDB}
+    %       \resumeItemListEnd
       
     \resumeSubHeadingListEnd
 
@@ -320,9 +349,14 @@
   \vspace{2pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Ngôn ngữ:}{ PHP, C++, JavaScript, Python, Swift, Dart, MySQL} \\ \vspace{3pt}
+        % \textbf{Ngôn ngữ:}{ PHP, C++, JavaScript, Python, Swift, Dart, MySQL} \\ \vspace{3pt}
+        - Swift, UIKit, Autolayout, CocoaPods, Promisekit \\ \vspace{3pt}
+        - Kiến trúc: MVC, MVVM \\ \vspace{3pt}
+        - Network: RESTful API, Alamofire \\ \vspace{3pt}
+        - Reactive Programming \\ \vspace{3pt}
+        - Xcode, Git-flow, Firebase \\ \vspace{3pt}
         
-        \textbf{Công nghệ:}{ Git, Firebase} \\ \vspace{3pt}
+        % \textbf{Công nghệ:}{ Git, Firebase} \\ \vspace{3pt}
         
         % \textbf{Languages:}{ Turkish (Native), English (Professional), German (Elementary)}
         
@@ -375,10 +409,10 @@
 
 %----------- HOBBIES -----------
 
-% \section{Hobbies}
-  % \resumeSubHeadingListStart
-    % \small{\item{Swimming, Fitness, Eight-ball}}
-  % \resumeSubHeadingListEnd
+% \section{Sở thích}
+%   \resumeSubHeadingListStart
+%     \small{\item{Chơi game, Nghe nhạc}}
+%   \resumeSubHeadingListEnd
 
 
 
