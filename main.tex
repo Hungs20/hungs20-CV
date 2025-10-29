@@ -21,6 +21,7 @@
 \usepackage{tabularx}
 \usepackage{hyphenat}
 \usepackage{fontawesome}
+\usepackage[normalem]{ulem}
 \input{glyphtounicode}
 
 
@@ -149,7 +150,7 @@
     \faFacebook \hspace{.5pt} \href{https://fb.com/it.hungcv}{Facebook}
     $|$
     \faGithub \hspace{.5pt} \href{https://github.com/hungs20}{GitHub}\\ \vspace{3pt}
-    \faMapMarker \hspace{.5pt} \href{https://goo.gl/maps/9sLbJwDmryodERvY6}{Cổ Nhuế, Từ Liêm, Hà Nội}
+    \faMapMarker \hspace{.5pt} \href{https://goo.gl/maps/9sLbJwDmryodERvY6}{Mỹ Đình, Từ Liêm, Hà Nội}
 \end{minipage}
 
     % \textbf{\Huge \scshape Chu Văn Hưng} \\ \vspace{3pt}
@@ -172,9 +173,9 @@
 
 
 %----------- Mục tiêu nghề nghiệp -----------
-\section{Mục tiêu nghề nghiệp}
-  \vspace{3pt}
-  Học hỏi thêm các kỹ năng, kiến thức mới từ những người đồng nghiệp, thích nghi với môi trường làm việc, hoàn thiện đúng các yêu cầu về thời gian, công việc để tạo ra sản phẩm tốt nhất. Mở rộng thêm các mối quan hệ, phát triển bản thân. 
+% \section{Mục tiêu nghề nghiệp}
+%   \vspace{3pt}
+%   Học hỏi thêm các kỹ năng, kiến thức mới từ những người đồng nghiệp, thích nghi với môi trường làm việc, hoàn thiện đúng các yêu cầu về thời gian, công việc để tạo ra sản phẩm tốt nhất. Mở rộng thêm các mối quan hệ, phát triển bản thân. 
 
 %----------- EDUCATION -----------
 
@@ -237,44 +238,42 @@
   \resumeSubHeadingListStart
     
     \resumeSubheading
-      {Giao hàng tiết kiệm}{Phạm Hùng, Cầu Giấy}
-      {Phát triển ứng dụng Driver\&X}{7\textbf{/}2020 \textbf{--} Nay}
+      {Giao hàng tiết kiệm}{Phạm Hùng, Từ Liêm}
+      {Phát triển ứng dụng IOS}{7\textbf{/}2020 \textbf{--} Nay}
         \resumeItemListStart
-            \resumeItem{Sử dụng Swift, UIKit, Autolayout, PromiseKit}
-            \resumeItem{Kiến trúc: MVC, MVVM}
-            \resumeItem{Sử dụng Alamofire, giao tiếp với Backend thông qua API}
-            \resumeItem{Reactive Programing: RxSwift}
-            \resumeItem{Tracking Location, Push Notification, CallKit, Map, CoreBluetooth}
+            \resumeItem{Phát triển các tính năng nội bộ của công ty trên IOS}
+            \resumeItem{Làm việc với Swift, UIKit, Autolayout, PromiseKit, Alamofire, Firebase}
+            \resumeItem{Thiết kế và triển khai theo kiến trúc MVC, MVVM}
+            \resumeItem{Ứng dụng các kỹ thuật Reactive Programming (RxSwift)}
+            \resumeItem{Phát triển và đóng gói thư viện nội bộ tái sử dụng bằng CocoaPods; tích hợp các thư viện bên thứ ba (RxSwift, Alamofire, PromiseKit).}
+            \resumeItem{Xây dựng các tính năng như theo dõi vị trí, thông báo đẩy, bản đồ, gọi điện, Bluetooth (CoreBluetooth, MapBox, CallKit, Push Notification)}
         \resumeItemListEnd
-        
     \resumeSubheading
-        {Giao hàng tiết kiệm}{Phạm Hùng, Cầu Giấy}
-        {Tham gia phát triển base framework GMap}{9\textbf{/}2021 \textbf{--} 3\textbf{/}2022}
+      {}{}
+      {Phát triển ứng dụng Android/IOS - Flutter}{1\textbf{/}2024 \textbf{--} Nay}
         \resumeItemListStart
-            \resumeItem{Thành viên: 2}
-            \resumeItem{Sử dụng: Swift, Autolayout, UIKit, Alamofire, MapBox}
-            \resumeItem{Công việc: Phát triển thư viện Map cho các app khác sử dụng}
+            \resumeItem{Phát triển các tính năng nội bộ của công ty trên Android/IOS bằng Flutter}
+            \resumeItem{Tích hợp Flutter module vào ứng dụng iOS native, giao tiếp hai chiều qua Pigeon để chia sẻ dữ liệu và gọi hàm native.}
+            \resumeItem{Phát triển giao diện và quản lý trạng thái với GetX và BLoC, tối ưu hiệu năng và khả năng mở rộng của ứng dụng.}
         \resumeItemListEnd
-        
+    
     \resumeSubheading
-        {Giao hàng tiết kiệm}{Phạm Hùng, Cầu Giấy}
-        {Tham gia phát triển GNews}{7\textbf{/}2020 \textbf{--} 9\textbf{/}2021}
+      {JudgeMaster}{Freelancer}
+      {Phát triển ứng dụng Windows/MacOS}{2024}
         \resumeItemListStart
-            \resumeItem{Thành viên: 2}
-            \resumeItem{Sử dụng: Swift, Autolayout, UIKit, Alamofire}
-            \resumeItem{Công việc: Phát triển các tính năng tin tức, sự kiện, chấm công, ...}
-        \resumeItemListEnd
-        
+            \resumeItem{Sử dụng Flutter để phát triển ứng dụng chấm bài tập lập trình cho ngôn ngữ Pascal, C, C++, Python, Scratch.}
+            \resumeItem{Tự động hóa quá trình build app bằng CI/CD bằng Github Action.}
+            \resumeItem{Link ứng dụng: \emph{\href{https://www.judgemaster.com}{\color{blue}JudgeMaster Play}}}
+    \resumeItemListEnd
+    
     \resumeSubheading
       {ABC Food}{Freelancer}
       {Phát triển ứng dụng Android/iOS}{9\textbf{/}2022 \textbf{--} 10/2022}
         \resumeItemListStart
             \resumeItem{Sử dụng Flutter để phát triển ứng dụng đặt hàng cho cửa hàng trên nền tảng Android/iOS.}
             \resumeItem{Đưa ứng dụng lên cửa hàng Google Play và AppStore.}
-            \resumeItem{Link ứng dụng: \emph{\href{https://play.google.com/store/apps/details?id=com.abcfood.abcfood}{\color{blue}Google Play}} | \emph{\href{https://apps.apple.com/app/id6443708922}{\color{blue}AppStore}}}
-            
+            \resumeItem{Link ứng dụng: \emph{\href{https://play.google.com/store/apps/details?id=com.abcfood.abcfood}{\color{blue}\sout{Google Play}}} | \emph{\href{https://apps.apple.com/app/id6443708922}{\color{blue}AppStore}}}
     \resumeItemListEnd
-    
     % \resumeSubheading
       % {Ankara Metropolitan Municipality}{Ankara, Turkey}
       % {SCADA Engineering Intern}{Aug 2021 \textbf{--} Sep 2021}
@@ -289,31 +288,42 @@
   \resumeSubHeadingListEnd
 
 
-
-%----------- AWARDS & ACHIEVEMENTS -----------
-
-\section{Giải thưởng \& thành tựu}
-  \vspace{2pt}
-  \resumeSubHeadingListStart
-    \small{\item{
-        \textbf{Giải ba HSG Quốc Gia môn Tin học - 2018} \\ \vspace{3pt}
-        
-        \textbf{Tham gia tin học trẻ quốc gia:}{ Tham gia cuộc thi Tin học trẻ Quốc Gia năm 2018} \\ \vspace{3pt}
-        
-        % \textbf{Boğaziçi University English Proficiency Test (BUEPT):}{ Achieved the highest grade A on the BUEPT grading scheme with a total score in the range of 85-100.} \\ \vspace{3pt}
-        
-    }}
-  \resumeSubHeadingListEnd
-
-
-
 %----------- PROJECTS -----------
 
 \section{Dự án}
     \vspace{3pt}
     \resumeSubHeadingListStart
-      
+
       \resumeProjectHeading
+        {\textbf{GHTKCO} $|$ \emph{App Nội Bộ Giao hàng tiết kiệm}
+        }{}
+          \resumeItemListStart
+            \resumeItem{Xây dựng ứng dụng nội bộ trên IOS cho nhân viên nội bộ, thiết kế kiến trúc theo mô hình MVVM.}
+            \resumeItem{Sử dụng Swift cùng các thư viện bằng CocoaPods (RxSwift, Alamofire, PromiseKit)}
+            \resumeItem{Tích hợp module Flutter vào IOS Native}
+          \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{GFlutter} $|$ \emph{Module Flutter}
+        }{}
+          \resumeItemListStart
+            \resumeItem{Xây dựng module Flutter cho tính năng vận hành tài xế.}
+            \resumeItem{Sử dụng Flutter, State Management (GetX, BLoC), kết nối với Native qua Pigeon}
+          \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{Apollo} $|$ \emph{App hỗ trợ kinh doanh cho Khách hàng GHTK}
+        }{}
+          \resumeItemListStart
+            \resumeItem{Xây dựng ứng dụng trên Android/IOS bằng Flutter, sử dụng State Management (BLoC), kết nối với Native qua Pigeon.}
+            \resumeItem{Sử dụng Alamofire để làm base network trên native.}
+          \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{GMap} $|$ \emph{Module Swift}
+        }{}
+          \resumeItemListStart
+            \resumeItem{Xây dựng thư viện Map bằng Swift và CocoaPods.}
+            \resumeItem{Sử dụng mã nguồn mở MapLibre, custom lại để sử dụng cho các app nội bộ}
+          \resumeItemListEnd
+    \resumeProjectHeading
         {\textbf{Môi trường thông minh} $|$ \emph{Khóa luận tốt nghiệp}
         }{}
           \resumeItemListStart
@@ -322,22 +332,22 @@
             \resumeItem{Điểm số: A}
           \resumeItemListEnd
       
-      \resumeProjectHeading
-        {\textbf{SOSMap} $|$ \emph{Bài tập lớn môn Kho dữ liệu}
-        }{}
-          \resumeItemListStart
-            \resumeItem{Xây dựng ứng dụng gửi và nhận yêu cầu trợ giúp khi xảy ra sự cố trên đường, hoạt động trên iOS/Android.}
-            \resumeItem{Sử dụng Flutter, Firebase kết hợp thư viện Map}
-            \resumeItem{Điểm số: A}
-          \resumeItemListEnd
+      % \resumeProjectHeading
+      %   {\textbf{SOSMap} $|$ \emph{Bài tập lớn môn Kho dữ liệu}
+      %   }{}
+      %     \resumeItemListStart
+      %       \resumeItem{Xây dựng ứng dụng gửi và nhận yêu cầu trợ giúp khi xảy ra sự cố trên đường, hoạt động trên iOS/Android.}
+      %       \resumeItem{Sử dụng Flutter, Firebase kết hợp thư viện Map}
+      %       \resumeItem{Điểm số: A}
+      %     \resumeItemListEnd
       
-      \resumeProjectHeading
-        {\textbf{Tìm trọ} $|$ \emph{Bài tập lớn môn Thiết kế giao diện người dùng} $|$ \emph{\href{https://github.com/Hungs20/Timtro-ReactNative}{\color{blue}GitHub}}}{}
-          \resumeItemListStart
-            \resumeItem{Ứng dụng giúp đăng tải thông tin phòng trọ cho chủ trọ, hiển thị thông tin phòng, liên lạc với chủ phòng đối với người muốn thuê trọ.}
-            \resumeItem{Sử dụng React Native kết hợp Firebase}
-            \resumeItem{Điểm số: A}
-          \resumeItemListEnd
+      % \resumeProjectHeading
+      %   {\textbf{Tìm trọ} $|$ \emph{Bài tập lớn môn Thiết kế giao diện người dùng} $|$ \emph{\href{https://github.com/Hungs20/Timtro-ReactNative}{\color{blue}GitHub}}}{}
+      %     \resumeItemListStart
+      %       \resumeItem{Ứng dụng giúp đăng tải thông tin phòng trọ cho chủ trọ, hiển thị thông tin phòng, liên lạc với chủ phòng đối với người muốn thuê trọ.}
+      %       \resumeItem{Sử dụng React Native kết hợp Firebase}
+      %       \resumeItem{Điểm số: A}
+      %     \resumeItemListEnd
       
     %   \resumeProjectHeading
     %     {\textbf{Website tuyển dụng} $|$ \emph{Bài tập lớn môn Lập trình web} $|$ \emph{\href{https://github.com/unik00/Web_team6}{\color{blue}GitHub}}}{}
@@ -362,7 +372,6 @@
     \resumeSubHeadingListEnd
 
 
-
 %----------- SKILLS -----------
 
 \section{Kỹ năng}
@@ -371,10 +380,12 @@
     \small{\item{
         % \textbf{Ngôn ngữ:}{ PHP, C++, JavaScript, Python, Swift, Dart, MySQL} \\ \vspace{3pt}
         - Swift, UIKit, Autolayout, CocoaPods, Promisekit \\ \vspace{3pt}
+        - Flutter, GetX, Bloc \\ \vspace{3pt}
         - Kiến trúc: MVC, MVVM \\ \vspace{3pt}
         - Network: RESTful API, Alamofire \\ \vspace{3pt}
         - Reactive Programming \\ \vspace{3pt}
         - Xcode, Git-flow, Firebase \\ \vspace{3pt}
+        - Sử dụng AI Agent trong coding
         
         % \textbf{Công nghệ:}{ Git, Firebase} \\ \vspace{3pt}
         
@@ -388,6 +399,21 @@
   \resumeSubHeadingListEnd
 
 
+
+%----------- AWARDS & ACHIEVEMENTS -----------
+
+\section{Giải thưởng \& thành tựu}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Giải ba HSG Quốc Gia môn Tin học - 2018} \\ \vspace{3pt}
+        
+        \textbf{Tham gia tin học trẻ quốc gia:}{ Tham gia cuộc thi Tin học trẻ Quốc Gia năm 2018} \\ \vspace{3pt}
+        
+        % \textbf{Boğaziçi University English Proficiency Test (BUEPT):}{ Achieved the highest grade A on the BUEPT grading scheme with a total score in the range of 85-100.} \\ \vspace{3pt}
+        
+    }}
+  \resumeSubHeadingListEnd
 
 %----------- RELEVANT COURSEWORK -----------
 
